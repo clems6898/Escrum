@@ -139,7 +139,7 @@ class Project{
 			$complet = 0;
 			foreach ($this->getProductBacklog()->getUserStories() as $userStory) {
 				$total += $userStory->getComplexity();
-				if($userStory->isCompleted()){
+				if($userStory->getStatut() == 2){
 					$complet += $userStory->getComplexity();
 				}
 			}

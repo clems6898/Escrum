@@ -68,19 +68,19 @@ echo '<html lang="fr">';
 								if($user_story->getTasks()!=null){
 									foreach ($user_story->getTasks() as $task) {		
 										switch ($task->getPriority()) {
-											case '1': echo '<a data-toggle="modal" data-task="'.$task->getIdx().'" data-target="#taskModal" class="inline priority-box priority-high">'.$task->getName().'</a>';
+											case '1': echo '<a data-toggle="modal" data-task="'.$task->getIdx().'" data-target="#taskModal" class="inline priority-box priority-small">'.$task->getName().'</a>';
 												break;
 											case '2': echo '<a data-toggle="modal" data-task="'.$task->getIdx().'" data-target="#taskModal" class="inline priority-box priority-medium">'.$task->getName().'</a>';
 												break;
-											case '3': echo '<a data-toggle="modal" data-task="'.$task->getIdx().'" data-target="#taskModal" class="inline priority-box priority-small">'.$task->getName().'</a>';
+											case '3': echo '<a data-toggle="modal" data-task="'.$task->getIdx().'" data-target="#taskModal" class="inline priority-box priority-high">'.$task->getName().'</a>';
 												break;											
 											default:
-												echo '<a data-toggle="modal" data-task="'.$task->getIdx().'" data-target="#taskModal" class="inline priority-box priority-medium">'.$task->getName().'</a>';
+												echo '<a data-toggle="modal" data-task="'.$task->getIdx().'" data-target="#taskModal" class="inline priority-box priority-small">'.$task->getName().'</a>';
 												break;
 										}
 									}
 								}else{
-									echo '<p><strong>No Tasks</strong></p>';
+									echo '<p><strong>No task !</strong></p>';
 								}
 								echo '</div>';
 							echo '</div>';
@@ -102,7 +102,7 @@ echo '<html lang="fr">';
 				echo '<div class="row plus-button mt-2 justify-content-center">';
                     echo '<form action="index.php?page=user-story-new" method="POST">';
                     	echo '<input type="hidden" name="project" value="'.$crtProject->getIdx().'">';
-                        echo '<button class="btn" type="submit"><i class="fas fa-plus fa-lg"></i></button>';
+                        echo '<button class="btn" type="submit" title="Add User Story"><i class="fas fa-plus fa-lg"></i></button>';
                     echo '</form>';
                 echo '</div>';
 			}	

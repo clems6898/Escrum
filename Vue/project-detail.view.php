@@ -106,7 +106,7 @@ echo '<html lang="fr">';
 				echo '<div class="row plus-button mt-2 justify-content-center">';
                     echo '<form action="index.php?page=sprint-new" method="POST">';
                     	echo '<input type="hidden" name="project" value="'.$crtProject->getIdx().'">';
-                        echo '<button class="btn" type="submit"><i class="fas fa-plus fa-lg"></i></button>';
+                        echo '<button class="btn" type="submit" title="Add a sprint"><i class="fas fa-plus fa-lg"></i></button>';
                     echo '</form>';
                 echo '</div>';
 			}

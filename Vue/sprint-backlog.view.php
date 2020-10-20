@@ -66,14 +66,14 @@ echo '<html lang="fr">';
 							echo '<div class="text-center mb-3">';
 								foreach ($user_story->getTasks() as $task) {		
 									switch ($task->getPriority()) {
-										case '1': echo '<a data-toggle="modal" data-target="#taskModal" data-task="'.$task->getIdx().'" class="inline priority-box priority-high">'.$task->getName().'</a>';
+										case '1': echo '<a data-toggle="modal" data-target="#taskModal" data-task="'.$task->getIdx().'" class="inline priority-box priority-small">'.$task->getName().'</a>';
 											break;
 										case '2': echo '<a data-toggle="modal" data-target="#taskModal" data-task="'.$task->getIdx().'" class="inline priority-box priority-medium">'.$task->getName().'</a>';
 											break;
-										case '3': echo '<a data-toggle="modal" data-target="#taskModal" data-task="'.$task->getIdx().'" class="inline priority-box priority-small">'.$task->getName().'</a>';
+										case '3': echo '<a data-toggle="modal" data-target="#taskModal" data-task="'.$task->getIdx().'" class="inline priority-box priority-high">'.$task->getName().'</a>';
 											break;											
 										default:
-											echo '<a data-toggle="modal" data-target="#taskModal" data-task="'.$task->getIdx().'" class="inline priority-box priority-medium">'.$task->getName().'</a>';
+											echo '<a data-toggle="modal" data-target="#taskModal" data-task="'.$task->getIdx().'" class="inline priority-box priority-small">'.$task->getName().'</a>';
 											break;
 									}
 								}

@@ -499,3 +499,10 @@ input:checked + .slider:before {
 	padding-top: 8px;
 	color:var(--hover-txt-color);
 }
+
+.btn:active, .btn:focus, .btn.active, .close:focus, .form-control:active, .form-control:focus{
+  	background-image: none;
+   	outline: 0;
+   	-webkit-box-shadow: none;
+   	box-shadow: none;
+}

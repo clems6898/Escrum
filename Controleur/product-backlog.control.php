@@ -19,7 +19,7 @@ if($crtProject->getIdx() != null){
 	}
 	require_once('Vue/product-backlog.view.php');
 }else{
-	var_dump("existe pas");
+	header('Location: index.php?page=project');
 }
 
 

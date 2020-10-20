@@ -77,7 +77,7 @@ echo '<html lang="fr">';
 			}	
 		if($_SESSION['role'] == 1){
 			echo '<div class="row plus-button mt-2 justify-content-center">';           
-	            echo '<a href="index.php?page=project-new"><i style="padding-top:18px" class="fas fa-plus fa-lg"></i></a>';
+	            echo '<a href="index.php?page=project-new" title="Add a project"><i style="padding-top:18px" class="fas fa-plus fa-lg"></i></a>';
 	        echo '</div>';
 		}		
 	echo '</body>';

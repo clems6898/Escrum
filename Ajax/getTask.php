@@ -35,11 +35,11 @@ echo '<div class="modal-body">';
 		echo '<div>';
 			echo '<p class="inline"><strong>Priority :</strong></p>';
 			switch($task->getPriority()){
-				case '1' : echo '<div class="inline priority-box priority-high">High</div>';
+				case '1' : echo '<div class="inline priority-box priority-small">Small</div>';
 					break;
 				case '2' : echo '<div class="inline priority-box priority-medium">Medium</div>';
 					break;
-				case '3' : echo '<div class="inline priority-box priority-small">Small</div>';
+				case '3' : echo '<div class="inline priority-box priority-high">High</div>';
 					break;
 				default : echo '<div class="inline priority-box priority-small">Small</div>';
 					break;
@@ -54,7 +54,7 @@ echo '<div class="modal-body">';
 		echo '<div class="row justify-content-center">';
 			echo '<p class="mb-1">Avancement UserStory</p>';
 		echo '</div>';
-		echo '<div class="progress mx-auto mb-2" style="width:60%;">';
+		echo '<div class="progress mx-auto mb-3" style="width:60%;">';
 			echo '<div class="progress-bar" role="progressbar" aria-valuenow="'.$us->getAvancee().'" aria-valuemin="0" 	aria-valuemax="100" style="width:'.$us->getAvancee().'%;">'.$us->getAvancee().'%</div>';
 		echo '</div>';
 	}else{ //Product Backlog
@@ -88,7 +88,7 @@ echo '<div class="modal-body">';
 				echo '</div>';
 			}		
 		}else{
-			echo '<p><strong>No Participants</strong></p>';
+			echo '<p>No participant</p>';
 		}
 		
 	echo '</div>';
@@ -103,7 +103,7 @@ if($_POST['nb'] == 1){ //Page 'my task'
 	}elseif($task->getState() == 1){
 		echo '<button type="button" id="completed" data-dismiss="modal" class="btn custom-btn"><i class="fas fa-arrow-circle-right"></i> Completed</button>';
 	}else{
-		echo '<strong><p>Cette tache est terminée</p></strong>';
+		echo '<strong><p>This task is completed.</p></strong>';
 	}
 }elseif($_POST['nb'] == 2){
 	echo '<button type="button" data-dismiss="modal" class="btn custom-btn"><i class="fas fa-times"></i> Close</button>';

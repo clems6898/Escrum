@@ -19,17 +19,6 @@ if($crtProject->getIdx() != null){
 	}
 	require_once('Vue/Project-detail.view.php');
 }else{
-	var_dump("existe pas");
+	header('Location: index.php?page=project');
 }
-
-
-
-//require_once("Vue/Project-detail.view.php");
-//Afficher les détails pour le projet passé en paramètre
-//Tester si le projet existe et si l'utilisateur connecté a bien accès à ce sprint 
-//Si oui, afficher les détails de ce sprint
-//Tester si l'utilisateur est bien scrumMaster
-
-
-
 ?>
