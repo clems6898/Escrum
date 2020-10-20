@@ -1,0 +1,9 @@
+{
+	"usr": "postgres",
+	"pwd": "clegro",
+	"db": "escrum",
+	"srv": "localhost",
+	"port": "5432",
+	"str": "",
+	"dsn": ""
+}
