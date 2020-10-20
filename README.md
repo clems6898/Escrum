@@ -1,2 +1,2 @@
-# escrum
- Scrum management
+# Escrum
+ Scrum management with a web aplication
