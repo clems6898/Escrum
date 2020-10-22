@@ -1,4 +1,8 @@
 # Escrum
 Scrum management with a web aplication
-put the different files in C:/webserver/www/ with Apache server (in some case, the links cann't work)
-The database used is PostgreSQL, change the config in json/pgConnect.json
+This web app was made for a school project in PHP with a MVC pattern. 
+To use this app, you should install PostgreSQL and the database which is in "Database" folder, don't forget to put the configuration in escrum/webserver/www/json/pgConnect.json 
+
+If you want to use another SGBD, just modifie the Manager class.
+
+In the screenshot folder, you can fin the final application. 
