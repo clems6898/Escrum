@@ -5,4 +5,4 @@ To use this app, you should install PostgreSQL and the database which is in "Dat
 
 If you want to use another SGBD, just modifie the Manager class.
 
-In the screenshot folder, you can fin the final application. 
+In the screenshot folder, you can find the final application. 
